@@ -1,0 +1,292 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    color: #222;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #000000;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 5px solid #f4b400;
+}
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+nav ul li a {
+    color: #f4b400;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f4b400, #f06292);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+section:hover {
+    transform: scale(1.02);
+}
+section h2 {
+    margin-bottom: 1rem;
+    color: #f06292;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #f4b400;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+section p, section ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+section img {
+    width: 48%;
+    margin: 1%;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+section img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #000000;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 5px solid #f4b400;
+}
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+footer nav a {
+    color: #f4b400;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+footer nav a:hover {
+    color: #f06292;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    section img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+/* Services Section */
+#services {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+#services .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f06292;
+    border-bottom: 3px solid #f4b400;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+#services .section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.8;
+}
+#services .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+#services .service-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 2rem);
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#services .service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+#services .service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f4b400;
+}
+#services .service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+#services .services-images {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+#services .services-images img {
+    width: 48%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#services .services-images img:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+/* Advantages Section */
+#advantages {
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+#advantages .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #f06292;
+    border-bottom: 3px solid #f4b400;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+#advantages .section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.8;
+}
+#advantages .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+#advantages .advantage-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(45% - 2rem);
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#advantages .advantage-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+#advantages .advantage-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f4b400;
+    text-align: center;
+}
+#advantages .advantage-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+#advantages .advantages-images {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+#advantages .advantages-images img {
+    width: 48%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#advantages .advantages-images img:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
